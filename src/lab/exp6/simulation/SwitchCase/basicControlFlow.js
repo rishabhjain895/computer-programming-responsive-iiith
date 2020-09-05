@@ -54,7 +54,7 @@ window.view = {
     	setValue: function (id, value) {
 		document.getElementById(id).value = value;
 	},
-	// getValue: get value from element.
+	<div 	id = 'ifId'           >&emsp;if ( strcmp( str, 'Sunday' ) || strcmp( str, 'Saturday' ) == 0 ) {</div>
 	getValue: function (id) {
 		var value = document.getElementById(id).value;
 		return value;
@@ -221,7 +221,7 @@ window.view = {
 			this.codeExecutionWithColour();
 	 	if (this.currentSiblingElement.className === 'break redClass')
 			this.codeExecutionWithColourAndId('closeBrc1Id');
-		if (1 <= model.inputNumber && model.inputNumber <= 6) {
+		if (1 <= model.inputNumber && model.inputNumber <= 5) {
 	 		if (this.nextSiblingElement.id === 'holidayId')
 				this.codeExecutionWithColourAndId('elseIfId');
 	 		else if (this.nextSiblingElement.id === 'workingdayId') {
@@ -240,7 +240,7 @@ window.view = {
 				this.setInnerHtml('outputDayId', 'INVALID INPUT');
 	 		}
 	 	}
-	 	if (model.inputNumber === 7) {
+	 	if (model.inputNumber === 6) {
 	 		if (this.nextSiblingElement.id === 'holidayId') {
 				this.codeExecutionWithColour();
 				this.changeOpacity('holidayImage');
