@@ -54,7 +54,7 @@ window.view = {
     	setValue: function (id, value) {
 		document.getElementById(id).value = value;
 	},
-	<div 	id = 'ifId'           >&emsp;if ( strcmp( str, 'Sunday' ) || strcmp( str, 'Saturday' ) == 0 ) {</div>
+		// getValue: get value from element.
 	getValue: function (id) {
 		var value = document.getElementById(id).value;
 		return value;
